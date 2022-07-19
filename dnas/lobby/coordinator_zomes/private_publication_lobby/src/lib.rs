@@ -16,6 +16,12 @@ fn progenitor(_: ()) -> ExternResult<AgentPubKey> {
 
     Ok(progenitor_properties.progenitor.into())
 }
+
+#[hdk_extern]
+fn request_read_all_posts(_: ()) -> ExternResult<()> {
+    Ok(())
+}
+
 /** Don't change */
 #[cfg(feature = "exercise")]
 extern crate private_publication_lobby;
